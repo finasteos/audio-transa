@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transa - Real-time Audio Transcription</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-microphone"></i> Audio Transa</h1>
+            <p>Real-time audio transcription powered by AI</p>
+        </header>
+
+        <main>
+            <div class="recording-section">
+                <div class="recording-controls">
+                    <button id="recordBtn" class="record-btn">
+                        <i class="fas fa-circle"></i>
+                        Start Recording
+                    </button>
+                    <button id="stopBtn" class="stop-btn" disabled>
+                        <i class="fas fa-stop"></i>
+                        Stop Recording
+                    </button>
+                </div>
+
+                <div class="recording-status">
+                    <div id="statusIndicator" class="status-indicator">
+                        <i class="fas fa-microphone-slash"></i>
+                        <span id="statusText">Ready to record</span>
+                    </div>
+                    <div class="recording-timer">
+                        <span id="timer">00:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transcription-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-file-alt"></i> Live Transcription</h2>
+                    <button id="clearBtn" class="clear-btn">
+                        <i class="fas fa-trash"></i>
+                        Clear
+                    </button>
+                </div>
+
+                <div id="transcriptionArea" class="transcription-area">
+                    <div class="placeholder">
+                        <i class="fas fa-comment-dots"></i>
+                        <p>Your transcribed text will appear here...</p>
+                    </div>
+                </div>
+
+                <div class="transcription-controls">
+                    <button id="copyBtn" class="copy-btn" disabled>
+                        <i class="fas fa-copy"></i>
+                        Copy Text
+                    </button>
+                    <button id="downloadBtn" class="download-btn" disabled>
+                        <i class="fas fa-download"></i>
+                        Download
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3><i class="fas fa-cog"></i> Settings</h3>
+                <div class="settings-grid">
+                    <div class="setting-item">
+                        <label for="languageSelect">Language:</label>
+                        <select id="languageSelect">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="it">Italian</option>
+                            <option value="pt">Portuguese</option>
+                            <option value="ru">Russian</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ko">Korean</option>
+                            <option value="zh">Chinese</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Audio Transa. Powered by AI speech recognition.</p>
+        </footer>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
