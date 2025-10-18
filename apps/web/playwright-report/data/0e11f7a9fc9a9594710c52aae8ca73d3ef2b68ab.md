@@ -1,0 +1,53 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e6] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e7]:
+      - img [ref=e8]
+    - generic [ref=e11]:
+      - button "Open issues overlay" [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: "8"
+          - generic [ref=e15]: "9"
+        - generic [ref=e16]:
+          - text: Issue
+          - generic [ref=e17]: s
+      - button "Collapse issues badge" [ref=e18]:
+        - img [ref=e19]
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - heading "🎤 Audio Transcription" [level=1] [ref=e24]
+        - paragraph [ref=e25]: Real-time Swedish audio transcription med MLX-Whisper
+        - generic [ref=e26]: Connected
+      - generic [ref=e27]:
+        - generic [ref=e31]: 🎤
+        - button "🎙️ Start Recording" [ref=e33]
+      - link "-> 📝 Live Transcription Click \"Start Recording\" to begin transcription" [ref=e34] [cursor=pointer]:
+        - /url: undefined?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"
+        - heading "->" [level=2] [ref=e35]
+        - paragraph [ref=e36]:
+          - heading "📝 Live Transcription" [level=2] [ref=e37]
+          - paragraph [ref=e39]: Click "Start Recording" to begin transcription
+      - generic [ref=e40]:
+        - link "-> Status Ready" [ref=e41] [cursor=pointer]:
+          - /url: undefined?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"
+          - heading "->" [level=2] [ref=e42]
+          - paragraph [ref=e43]:
+            - heading "Status" [level=3] [ref=e44]
+            - paragraph [ref=e45]: Ready
+        - link "-> Audio Level 0%" [ref=e46] [cursor=pointer]:
+          - /url: undefined?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"
+          - heading "->" [level=2] [ref=e47]
+          - paragraph [ref=e48]:
+            - heading "Audio Level" [level=3] [ref=e49]
+            - paragraph [ref=e50]: 0%
+        - link "-> Language Swedish (sv)" [ref=e51] [cursor=pointer]:
+          - /url: undefined?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"
+          - heading "->" [level=2] [ref=e52]
+          - paragraph [ref=e53]:
+            - heading "Language" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Swedish (sv)
+  - alert [ref=e56]
+```
