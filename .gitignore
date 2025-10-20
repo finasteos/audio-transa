@@ -37,6 +37,28 @@ yarn-error.log*
 .DS_Store
 *.pem
 
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+virtualenv/
+
+# Audio files
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.aac
+*.ogg
+*.wma
+*.aiff
+*.au
+*.raw
+*.voc
+*.opus
+
 # Debug files
 debug-screenshot-*.png
 playwright-report/
